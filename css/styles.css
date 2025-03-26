@@ -1,0 +1,46 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    background-color: #000; /* Black background */
+    color: white; /* White text */
+}
+
+#content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between; /* Aligns items in the container */
+}
+
+.item {
+    background: rgba(255, 255, 255, 0.1); /* Semi-transparent white background for items */
+    border: 1px solid rgba(255, 255, 255, 0.3); /* Semi-transparent white border */
+    border-radius: 5px;
+    margin: 10px;
+    padding: 15px;
+    width: calc(30% - 40px); /* Adjusts the width of the items */
+    box-shadow: 0 2px 5px rgba(255, 255, 255, 0.5); /* White shadow */
+    text-align: center; /* Centers text within the item */
+    transition: transform 0.2s; /* Smooth transition for hover effect */
+}
+
+.item img {
+    max-width: 100%; /* Ensures the image does not exceed the width of the container */
+    height: auto; /* Maintains the aspect ratio of the image */
+    border-radius: 5px; /* Rounded corners for the image */
+}
+
+h2 {
+    color: #fff; /* Title text color */
+    margin: 10px 0; /* Spacing around the title */
+    text-shadow: 2px 2px 5px rgba(255, 255, 255, 0.8), 0 0 25px rgba(255, 255, 255, 0.5); /* 3D effect */
+    transition: text-shadow 0.3s; /* Smooth transition for glow effect */
+}
+
+.item:hover h2 {
+    text-shadow: 2px 2px 10px rgba(255, 255, 255, 1), 0 0 30px rgba(255, 255, 255, 0.8); /* Glow effect on hover */
+}
+
+p {
+    color: #fff; /* Color of the description and price text */
+    margin: 5px 0; /* Spacing around paragraphs */
+}
